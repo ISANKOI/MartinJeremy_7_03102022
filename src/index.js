@@ -5,6 +5,9 @@ import Home from './pages/Home'
 import DetailsLogement from './pages/DetailsLogement'
 import Logement from './pages/Logement'
 import Propos from './pages/Propos'
+import Error from './components/Error'
+import Header from './components/Header'
+import Footer from './components/Footer'
 
 
 
@@ -13,12 +16,15 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <Router>
+      <Header />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/logement" element={<Logement />} />
         <Route path="/logement/details-logement" element={<DetailsLogement />} />
         <Route path="/a-propos" element={<Propos />} />
+        <Route path="*" element={<Error />} />
       </Routes>
+      <Footer />
     </Router>
     
   </React.StrictMode>
