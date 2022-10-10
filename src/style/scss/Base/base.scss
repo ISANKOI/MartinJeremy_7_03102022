@@ -1,0 +1,22 @@
+body{ 
+    font-family: 'Montserrat', sans-serif;
+    margin: 0px;
+    @include tablet-desktop-only;
+}
+main {  //min-height: calc( 100vh - 11em);
+        margin: auto;
+        width: 100%;
+}
+.wrapper {
+    max-width: 1240px;
+    margin: auto;
+}
+
+ul{ list-style-type:none;
+    padding: 0px;
+}
+h1, h2, h3, h4, h5 { margin: 0px;}
+
+a{  text-decoration: none;
+    color: $color-primary;
+}

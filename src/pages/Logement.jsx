@@ -1,14 +1,11 @@
-
-
 function App() {
     return (
-      <div>
-          <h1>
-            LOGEMENT !
-          </h1>
-      </div>
+        <main>
+            <div className="wrapper">
+                <h1>LOGEMENT !</h1>
+            </div>
+        </main>
     );
-  }
-  
-  export default App;
-  
+}
+
+export default App;

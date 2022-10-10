@@ -1,13 +1,15 @@
+import Banner from "../components/Banner";
+import Card from '../components/Card';
 
-
-function App() {
-  return (
-    <div>
-        <h1>
-          PAGE D'ACCEUIL !
-        </h1>
-    </div>
-  );
+function Home() {
+    return (
+        <main>
+            <div className="wrapper">
+                <Banner />
+                <Card />
+            </div>
+        </main>
+    );
 }
 
-export default App;
+export default Home;

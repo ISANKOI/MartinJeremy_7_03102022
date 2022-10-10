@@ -1,29 +1,26 @@
-import { Link } from 'react-router-dom'
-import styled from 'styled-components'
-import Logo from '../../assets/LogoHeader.svg'
-
-const HomeLogo = styled.img`
-  height: 70px;
-`
-
-const NavContainer = styled.nav`
-  padding: 30px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-`
+import { Link } from "react-router-dom";
+import Logo from "../../assets/LogoHeader.svg";
 
 function Header() {
-
-  return (
-    <NavContainer>
-      <Link to="/"><HomeLogo src={Logo} /></Link>
-      <div>
-        <Link to="/">Accueil</Link>
-        <Link to="/a-propos">A Propos</Link>
-      </div>
-    </NavContainer>
-  )
+    return (
+        <div className="wrapper">
+          <header>
+              <div className="header__logo">
+                  <img src={Logo} alt="Logo kasa" />
+              </div>
+              <nav className="header__nav">
+                  <ul className="header__nav__list">
+                      <li>
+                          <Link to="/"> Accueil </Link>
+                      </li>
+                      <li>
+                          <Link to="/a-propos"> A propos </Link>
+                      </li>
+                  </ul>
+              </nav>
+          </header>
+        </div>
+    );
 }
 
-export default Header
+export default Header;

@@ -1,14 +1,16 @@
+import BannerAbout from "../components/Banner-About";
 
 
-function App() {
-    return (
-      <div>
-          <h1>
-            A PROPOS !
-          </h1>
-      </div>
+function About() {
+    return (      
+      <main>
+        <div className="wrapper">
+          <BannerAbout />
+        </div>
+      </main>
+      
     );
   }
   
-  export default App;
+  export default About;
   

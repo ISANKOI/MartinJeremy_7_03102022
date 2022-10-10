@@ -1,8 +1,6 @@
-import { Link } from 'react-router-dom'
-import styled from 'styled-components'
 import Logo from '../../assets/LogoFooter.svg'
 
-const HomeLogo = styled.img`
+/*const HomeLogo = styled.img`
   height: 30px;
   padding: 30px;
 `
@@ -18,14 +16,18 @@ const Text = styled.footer`
     color: white;
     padding-bottom: 20px;
 `
-
+*/
 function Header() {
 
   return (
-    <FooterContainer>
-      <Link to="/"><HomeLogo src={Logo} /></Link>
-        <Text>© 2020 Kasa. All rights reserved</Text>
-    </FooterContainer>
+    <footer>
+        <div className="wrapper">
+            <div> 
+              <img src={Logo} alt="Logo de Kasa" /> 
+              </div>
+            <span>© 2020 Kasa. All rights reserved</span>
+        </div>
+    </footer>
   )
 }
 
