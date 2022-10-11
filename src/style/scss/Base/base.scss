@@ -3,7 +3,7 @@ body{
     margin: 0px;
     @include tablet-desktop-only;
 }
-main {  //min-height: calc( 100vh - 11em);
+main {  min-height: calc( 100vh - 11em);
         margin: auto;
         width: 100%;
 }

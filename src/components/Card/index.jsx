@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import accommodation from "../../data/accommodation.json";
 
-const Card = () => {
+function Card() {
   return (
     <div className="wrapper">
     <section className="accommodations">
