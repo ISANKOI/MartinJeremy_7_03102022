@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom/client';
 import { BrowserRouter as Router, Route, Routes} from 'react-router-dom'
 import '../src/style/scss/style.scss'
 import Home from './pages/Home'
-import Logement from './pages/Logement'
+import Lodging from './pages/Lodging'
 import Propos from './pages/Propos'
 import Error from './pages/Error'
 import Header from './components/Header'
@@ -19,7 +19,7 @@ root.render(
       <Header />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/logement/:id" element={<Logement />} />
+        <Route path="/lodging/:id" element={<Lodging />} />
         <Route path="/a-propos" element={<Propos />} />
         <Route path="*" element={<Error />} />
       </Routes>

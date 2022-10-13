@@ -15,6 +15,9 @@ header {
                 padding: 50px 0px;
                 margin-left: 35px;
                 font-size: 24px;
+                &:hover{
+                    text-decoration: underline;
+                }
                 
             }
         }

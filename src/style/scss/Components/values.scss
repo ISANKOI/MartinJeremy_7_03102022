@@ -2,15 +2,13 @@
     display: flex;
     justify-content: center;
 }
-.a-porpos__list{
+.a-porpos__list {
     display: flex;
     flex-direction: column;
-        li{
-            padding: 12px 0;
-        }
+    li {
+        padding: 12px 0;
+    }
 }
-
-
 
 .a-propos__list__valeur {
     display: flex;
@@ -21,43 +19,32 @@
     width: 1023px;
     border-radius: 5px;
     color: $color-white;
-    &:hover {
+    &:hover{
         cursor: pointer;
     }
-    &:active{
-        .a-propos__list__valeur__arrow{
-            transform: rotate(180deg);
-        }
+
+    &__arrow {
+        padding: 0 12px;
     }
 
-    h3{
+    h3 {
         font-weight: 500;
         font-size: 24px;
         padding-left: 12px;
         line-height: 34.22px;
-
-    }
-    &__arrow{
-        padding: 0 12px;
-
     }
 }
 .a-propos__list__valeur__text {
-        background-color: $background-secondary;
-        width: 1023px;
-        border-radius: 0 0 5px 5px;
-        
-        p{
-            color: $color-primary;
-            font-size: 24px;
-            font-weight: 400;
-            line-height: 34.22px;
-            margin: 0px;
-            padding: 24px;
-            
-        }
+    background-color: $background-secondary;
+    width: 1023px;
+    border-radius: 0 0 5px 5px;
 
+    p {
+        color: $color-primary;
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 34.22px;
+        margin: 0px;
+        padding: 24px;
     }
-
-  
-
+}
