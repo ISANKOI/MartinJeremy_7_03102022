@@ -1,6 +1,6 @@
-import Logo from '../../assets/LogoFooter.svg'
+import Logo from '../assets/LogoFooter.svg'
 
-function Header() {
+function Footer() {
 
   return (
     <footer>
@@ -14,4 +14,4 @@ function Header() {
   )
 }
 
-export default Header
+export default Footer

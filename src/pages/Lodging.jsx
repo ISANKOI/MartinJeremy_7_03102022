@@ -1,10 +1,10 @@
-import BannerAbout from "../components/Banner-About";
+import Slideshow from "../components/Slideshow";
 
 function lodging() {
     return (
         <main>
             <div className="wrapper">
-                <BannerAbout />
+                <Slideshow />
             </div>
         </main>
     );

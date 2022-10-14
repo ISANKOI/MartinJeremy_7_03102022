@@ -7,18 +7,7 @@
     border-radius: 25px;
     width: 100%;
     margin: 42px 0;
-    
-
-    & figure {
-        max-width: 340px;
-        height: 340px;
-        position: relative;
-        margin: 20px;
-        transition: transform 0.3s ease-in-out;
-        &:hover {
-          transform: scale(1.02);
-        }
-      }
+    padding: 22px 0px;
     
       & img {
         width: 100%;
@@ -28,12 +17,24 @@
         border-radius: 10px;
       }
     
-      & figcaption {
+      
+  }
+  .card__item {
+    max-width: 340px;
+    height: 340px;
+    position: relative;
+    margin: 20px;
+    transition: transform 0.3s ease-in-out;
+    &:hover {
+      transform: scale(1.02);
+    }
+    &__title{
         position: absolute;
         font-weight: 500;
         bottom: 15px;
         margin-left: 16px;
         font-size: 18px;
         color: $color-white;
-      }
+  
+    }
   }

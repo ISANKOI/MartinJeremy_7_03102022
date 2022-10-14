@@ -1,13 +1,17 @@
 @import "./Utils/mixins.scss";
 @import "./Utils/variables.scss";
 @import "./Utils/animations.scss";
+
 @import "./Base/base.scss";
 @import "./Base/typography";
+
 @import "./Layout/header.scss";
 @import "./Layout/footer.scss";
+
 @import "./Components/banner.scss";
 @import "./Components/card.scss";
-@import "./Components/values.scss";
+@import "./Components/collapse.scss";
+
 @import "./Pages/home.scss";
 @import "./Pages/logement.scss";
 @import "./Pages/propos.scss";

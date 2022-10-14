@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import Logo from "../../assets/LogoHeader.svg";
+import Logo from "../assets/LogoHeader.svg";
 
 function Header() {
     return (
@@ -14,7 +14,7 @@ function Header() {
                           <Link to="/"> Accueil </Link>
                       </li>
                       <li>
-                          <Link to="/a-propos"> A propos </Link>
+                          <Link to="/about"> A propos </Link>
                       </li>
                   </ul>
               </nav>
