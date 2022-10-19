@@ -1,6 +1,6 @@
-import lodging from "../data/lodging.json";
-
-function slideshow() {
+//import lodging from "../data/lodging.json";
+import banner from '../assets/BannerAbout.jpg'
+/*function slideshow() {
     return (
         <div className="" >
             {lodging.map((lodging) => ( 
@@ -12,5 +12,16 @@ function slideshow() {
     );
 
 }
+*/
+ function slideshow() {
+    return (
+        <div>
+            <img src={banner} alt="paysage demontagne"/>
+        </div>
+    )
+ }
+
+
+
 
 export default slideshow;

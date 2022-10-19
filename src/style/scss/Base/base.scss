@@ -2,7 +2,8 @@ html { scroll-behavior: smooth; }
 body{ 
     font-family: 'Montserrat', sans-serif;
     margin: 0px;
-    @include tablet-desktop-only;
+
+    @include phone-desktop-only;
 }
 main {  //min-height: calc( 100vh - 11em);
         margin: auto;
@@ -11,6 +12,7 @@ main {  //min-height: calc( 100vh - 11em);
 .wrapper {
     max-width: 1240px;
     margin: auto;
+    padding: 0 10px;
 }
 
 ul{ list-style-type:none;

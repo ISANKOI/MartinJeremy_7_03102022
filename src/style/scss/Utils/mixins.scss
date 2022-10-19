@@ -1,5 +1,158 @@
-@mixin tablet-desktop-only {
-    @media (min-width: $breakpoints-tablet-desktop) {
-        
-    }  
+@mixin phone-desktop-only {
+    @media (max-width: $breakpoints-phone-desktop) {
+        .wrapper {
+            max-width: 764px;
+            margin: 0 10px;
+            padding: 0px;
+        }
+        //----- HEADER -----//
+        header {
+            width: 100%;
+
+            & .header__logo {
+                margin: 0;
+            }
+            .header__logo__img {
+                height: 47px;
+                width: 145px;
+            }
+
+            .header__nav {
+                &__list {
+                    & li {
+                        font-size: 12px;
+                        margin-left: 14px;
+                    }
+                }
+            }
+        }
+        //----- BANNIERE -----//
+        .banner {
+            padding: 0px;
+            &__img {
+                height: 111px;
+                border-radius: 10px;
+                width: 100%;
+            }
+            &__text {
+                font-size: 24px;
+            }
+        }
+        //----- CARD -----//
+
+        //----- COLLAPSE -----//
+        .a-propos {
+            display: flex;
+            justify-content: center;
+        }
+        .a-propos__list {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+        }
+
+        .a-propos__list__valeur {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: $color-primary;
+            height: 47px;
+
+            border-radius: 5px;
+            color: $color-white;
+            &:hover {
+                cursor: pointer;
+            }
+
+            &__arrow {
+                padding: 0 12px;
+                .arrow_open {
+                    transform: rotate(180deg);
+                    transition: all 0.25s;
+                }
+                .arrow_close {
+                    transform: rotate(0);
+                    transition: all 0.25s;
+                }
+            }
+
+            h3 {
+                font-weight: 500;
+                font-size: 13px;
+                padding-left: 12px;
+                line-height: 17px;
+            }
+        }
+        .a-propos__list__valeur__text {
+            background-color: $background-secondary;
+            border-radius: 0 0 5px 5px;
+
+            p {
+                color: $color-primary;
+                font-size: 12px;
+                font-weight: 400;
+                line-height: 34.22px;
+                margin: 0px;
+                padding: 24px;
+            }
+        }
+        //----- ERROR -----//
+        .error {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            &__title {
+                text-align: center;
+                margin-top: 30px;
+                margin-bottom: 50px;
+                font-size: 96px;
+                font-weight: 700;
+                color: $color-primary;
+            }
+
+            &__text {
+                font-weight: 500;
+                text-align: center;
+                padding-bottom: 100px;
+                font-size: 18px;
+                color: $color-primary;
+            }
+            & .error__link-home {
+                font-size: 14px;
+                font-weight: 500;
+                text-decoration: underline;
+            }
+        }
+        //----- LODGING -----//
+        .details {
+            display: flex;
+            flex-direction: column;
+            &__more {
+                display: flex;
+                flex-direction: row-reverse;
+                justify-content: space-between;
+                align-items: center;
+                &__owner {
+                    display: flex;
+                    &__name {
+                        flex-direction: column;
+                        font-size: 18px;
+                        font-weight: 500;
+                        color: $color-primary;
+                    }
+                    &__picture {
+                        width: 64px;
+                        height: 64px;
+                        border-radius: 50px;
+                    }
+                }
+            }
+        }
+        //----- ABOUT -----//
+        .collapse__container{
+            padding: 0;
+        }
+    }
 }

@@ -6,18 +6,18 @@ function Card() {
     return (
         <section className="lodging">
             {lodging.map((lodging) => (
-                <article className="card__item">
                     <Link
+                    
                         to={`lodging/${lodging.id}`}
                         key={lodging.id}
                         
-                    >
+                    ><article className="card__item">
                         <img src={`${lodging.cover}`} alt={lodging.title} />
                         <h3 className="card__item__title">{lodging.title}</h3>
+                        </article>
                     </Link>
-                </article>
+                
             ))}
-            <div className="card__item--empty"></div>
         </section>
     );
 }
