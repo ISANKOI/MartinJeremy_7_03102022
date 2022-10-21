@@ -2,7 +2,7 @@ import { useState } from "react";
 import Arrow from "../assets/Arrow.png"
 
 
-function Collapse({values, description}) {
+function Collapse({title, description}) {
     
     const [display, setDisplay] = useState(false)
 
@@ -11,7 +11,7 @@ function Collapse({values, description}) {
         <ul className="a-propos__list">
             <li>
                 <div onClick={() => setDisplay(false)} className="a-propos__list__valeur">
-                    <h3 className="valeur__title">{values}</h3>
+                    <h3 className="valeur__title">{title}</h3>
                     <div className="a-propos__list__valeur__arrow">
                         <img src={Arrow} alt="Flèche" className="arrow_open"/>
                     </div>
@@ -29,7 +29,7 @@ function Collapse({values, description}) {
         <ul className="a-propos__list">
             <li>
                 <div onClick={() => setDisplay(true)} className="a-propos__list__valeur">
-                    <h3 className="valeur__title">{values}</h3>
+                    <h3 className="valeur__title">{title}</h3>
                     <div className="a-propos__list__valeur__arrow">
                         <img src={Arrow} alt="Flèche" className="arrow_close"/>
                     </div>

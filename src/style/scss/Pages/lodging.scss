@@ -19,16 +19,22 @@
             padding-bottom: 20px;
         }
         &__tag{
-            background-color: $color-primary;
-            border-radius: 10px;
-            width: 115px;
-            height: 25px;
             display: flex;
-            align-items: center;
-            justify-content: center;
+            justify-content: flex-start;
+            
 
             &__content{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-right: 10px;
+                text-align: center;
+                width: 115px;
+                height: 25px;
+                border-radius: 10px;
                 font-size: 14px;
+                font-weight: 500;
+                background-color: $color-primary;
                 font-weight: 500;
                 color: $color-white;
             }
@@ -72,3 +78,29 @@
     width: 100%;
 }
 
+@media (max-width : $breakpoints-phone-desktop) {
+    .details {
+        display: flex;
+        flex-direction: column;
+        &__more {
+            display: flex;
+            flex-direction: row-reverse;
+            justify-content: space-between;
+            align-items: center;
+            &__owner {
+                display: flex;
+                &__name {
+                    flex-direction: column;
+                    font-size: 18px;
+                    font-weight: 500;
+                    color: $color-primary;
+                }
+                &__picture {
+                    width: 64px;
+                    height: 64px;
+                    border-radius: 50px;
+                }
+            }
+        }
+    }
+}

@@ -1,21 +1,23 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import lodging from "../data/lodging.json";
+import lodgings from "../data/lodgings.json";
 
 function Card() {
     return (
         <section className="lodging">
-            {lodging.map((lodging) => (
+            {lodgings.map((lodgings) => (
+                    <article  key ={lodgings.id} className="card__item">
                     <Link
                     
-                        to={`lodging/${lodging.id}`}
-                        key={lodging.id}
+                        to={`lodging/${lodgings.id}`}
+                        key={lodgings.id}
                         
-                    ><article className="card__item">
-                        <img src={`${lodging.cover}`} alt={lodging.title} />
-                        <h3 className="card__item__title">{lodging.title}</h3>
-                        </article>
+                    >
+                        <img src={`${lodgings.cover}`} alt={lodgings.title} />
+                        <h3 className="card__item__title">{lodgings.title}</h3>
+                        
                     </Link>
+                    </article>
                 
             ))}
         </section>
