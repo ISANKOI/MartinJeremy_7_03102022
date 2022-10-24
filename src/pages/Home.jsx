@@ -8,7 +8,9 @@ function Home() {
             <div className="wrapper">
                 <Banner
                     src={BannerHome} alt={"paysage cotier"} slogan={"Chez vous, partout et ailleurs"}/>
-                <Card />
+                <section className="lodging">
+                    <Card />
+                </section>
             </div>
         </main>
     );

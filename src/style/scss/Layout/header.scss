@@ -11,21 +11,19 @@ header {
     .header__nav {
         &__list {
             display: flex;
-            & li {
-                a{
-                text-decoration: none ;
-                margin-left: 35px;
-                font-size: 24px;
-                &:hover, &.active {
-                    text-decoration: underline;
+            &__li {
+                &__link {
+                    text-decoration: none;
+                    margin-left: 35px;
+                    font-size: 24px;
                 }
-                }
-                
             }
         }
     }
 }
-@media (max-width : $breakpoints-phone-desktop) {
+
+
+@media (max-width: $breakpoints-phone-desktop) {
     header {
         width: 100%;
         padding: 12px 0;
@@ -40,11 +38,11 @@ header {
 
         .header__nav {
             &__list {
-                & li {
-                    a{
+                &__li {
+                    &__link {
                         font-size: 14px;
-                        margin-left: 14px;}
-                    
+                        margin-left: 14px;
+                    }
                 }
             }
         }

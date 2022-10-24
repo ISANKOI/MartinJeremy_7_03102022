@@ -1,0 +1,13 @@
+.lodging {
+    background-color: $background-secondary;
+    border-radius: 25px;
+    width: 100%;
+    margin: 42px 0;
+    padding: 22px 0px;
+}
+
+@media (max-width: $breakpoints-phone-desktop) {
+    .lodging {
+        background-color: $color-white;
+    }
+}

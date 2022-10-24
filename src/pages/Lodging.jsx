@@ -1,7 +1,7 @@
 
 //import Slideshow from "../components/Slideshow";
-import Banner from "../components/Banner";
-import BannerAbout from "../assets/BannerAbout.jpg";
+import Slideshow from "../components/Slideshow";
+//import BannerAbout from "../assets/BannerAbout.jpg";
 import Collapse from "../components/Collapse";
 //import star from "../assets/StarFull.png"
 import Stars from "../components/Stars"
@@ -17,8 +17,8 @@ function Lodging() {
     return (
         <main>
             <div className="wrapper">
-            <Banner
-            src={BannerAbout} alt={"Paysage montagneux"}
+            <Slideshow
+            pictures={data.pictures} alt={"Paysage montagneux"}
             />
                 <section>
                     <div className="details">

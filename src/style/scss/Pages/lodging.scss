@@ -32,11 +32,13 @@
                 width: 115px;
                 height: 25px;
                 border-radius: 10px;
-                font-size: 14px;
+                font-size: 12px;
                 font-weight: 500;
                 background-color: $color-primary;
                 font-weight: 500;
                 color: $color-white;
+                padding: 4px 0;
+                
             }
         }
     }
@@ -82,23 +84,34 @@
     .details {
         display: flex;
         flex-direction: column;
+        &__info{
+
+    
+            &__title{
+                font-size: 18px;
+            }
+            &__location{
+                font-size: 14px;
+            }
+            &__tag{
+
+                
+    
+                &__content{
+               
+                }
+            }
+        }
         &__more {
             display: flex;
             flex-direction: row-reverse;
-            justify-content: space-between;
-            align-items: center;
             &__owner {
-                display: flex;
+
                 &__name {
-                    flex-direction: column;
-                    font-size: 18px;
-                    font-weight: 500;
-                    color: $color-primary;
+
                 }
                 &__picture {
-                    width: 64px;
-                    height: 64px;
-                    border-radius: 50px;
+                    
                 }
             }
         }
