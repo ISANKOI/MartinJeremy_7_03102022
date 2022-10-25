@@ -8,6 +8,7 @@
             :hover{
                 cursor: pointer;
             }
+
         }
         &__arrowRight{
             position: absolute;
@@ -16,6 +17,7 @@
             :hover{
                 cursor: pointer;
             }
+            
         }
         &__counter{
             position: absolute;
@@ -33,4 +35,33 @@
         object-position: center;
     }
  
+}
+@media (max-width: $breakpoints-phone-desktop) {
+    .slideshow{
+
+    
+            &__arrowLeft{
+                &__img {
+                    width: 24px;
+                    height: 40px;
+                }
+
+            }
+            &__arrowRight{
+                &__img {
+                    width: 24px;
+                    height: 40px;
+                }
+
+            }
+            &__counter{
+                display: none;
+            }
+    
+        &__img{
+         height: 255px;
+         border-radius: 10px;
+        }
+     
+    }
 }

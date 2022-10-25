@@ -13,3 +13,11 @@ footer {
       font-size: 24px;
     }
   }
+  @media (max-width: $breakpoints-phone-desktop) {
+    footer { 
+      & span {
+
+        font-size: 14px;
+      }
+    }
+  }

@@ -1,19 +1,16 @@
-//import Slideshow from "../components/Slideshow";
 import Slideshow from "../components/Slideshow";
-//import BannerAbout from "../assets/BannerAbout.jpg";
 import Collapse from "../components/Collapse";
-//import star from "../assets/StarFull.png"
 import StarFull from "../assets/StarFull.png";
 import StarEmpty from "../assets/StarEmpty.png";
 import lodgings from "../data/lodgings.json";
-import { useParams } from "react-router-dom";
+import { Navigate, useParams } from "react-router-dom";
 
 function Lodging() {
     const { id } = useParams();
     const data = lodgings.find((location) => location.id === id);
-    const rate = [1, 2, 3, 4, 5]
+    const rate = [1, 2, 3, 4, 5];
 
-    return (
+    return data ? (
         <main>
             <div className="wrapper">
                 <Slideshow
@@ -54,19 +51,25 @@ function Lodging() {
                             <div className="details__more__info">
                                 {rate.map((rateLodging) =>
                                     data.rating >= rateLodging ? (
-                                        <div key={data.host}>
+                                        <div
+                                            key={data.host}
+                                            className="details__more__info__rating"
+                                        >
                                             <img
                                                 src={StarFull}
                                                 alt=""
-                                                className="details__more__info__ratingFull"
+                                                className="details__more__info__rating__star"
                                             />
                                         </div>
                                     ) : (
-                                        <div key={data.host}>
+                                        <div
+                                            key={data.host}
+                                            className="details__more__info__rating"
+                                        >
                                             <img
                                                 src={StarEmpty}
                                                 alt=""
-                                                className="details__more__info__ratingEmpty"
+                                                className="details__more__info__rating__star"
                                             />
                                         </div>
                                     )
@@ -91,6 +94,8 @@ function Lodging() {
                 </section>
             </div>
         </main>
+    ) : (
+        <Navigate replace to="/404" />
     );
 }
 

@@ -15,10 +15,10 @@ function Slideshow(img) {
     return (
         <div className="slideshow">
             <div onClick={previous} className="slideshow__arrowLeft">
-                <img src={ArrowLeft} alt="" />
+                <img src={ArrowLeft} alt="Flèche de sélection gauche" className="slideshow__arrowLeft__img" />
             </div>
             <div onClick={next} className="slideshow__arrowRight">
-                <img src={ArrowRight} alt="" />
+                <img src={ArrowRight} alt="Flèche de sélection droite" className="slideshow__arrowRight__img" />
             </div>
             <p className="slideshow__counter">1/5</p>
             {img.pictures.map((picture, index) => {
