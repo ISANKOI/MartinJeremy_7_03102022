@@ -16,7 +16,7 @@
     background-color: $color-primary;
     height: 47px;
     
-    border-radius: 10px;
+    border-radius: 5px;
     color: $color-white;
     &:hover{
         cursor: pointer;
@@ -43,7 +43,7 @@
 }
 .a-propos__list__valeur__text {
     background-color: $background-secondary;
-    border-radius: 0 0 10px 10px;
+    border-radius: 0 0 5px 5px;
 
     p {
         color: $color-primary;

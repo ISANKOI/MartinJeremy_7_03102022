@@ -1,48 +1,76 @@
-
 //import Slideshow from "../components/Slideshow";
 import Slideshow from "../components/Slideshow";
 //import BannerAbout from "../assets/BannerAbout.jpg";
 import Collapse from "../components/Collapse";
 //import star from "../assets/StarFull.png"
-import Stars from "../components/Stars"
-import  lodgings  from "../data/lodgings.json"
+import StarFull from "../assets/StarFull.png";
+import StarEmpty from "../assets/StarEmpty.png";
+import lodgings from "../data/lodgings.json";
 import { useParams } from "react-router-dom";
 
 function Lodging() {
-    
-    const {id} = useParams();
-    const data = lodgings.find((location) => location.id === id)
-    
+    const { id } = useParams();
+    const data = lodgings.find((location) => location.id === id);
+    const rate = [1, 2, 3, 4, 5]
 
     return (
         <main>
             <div className="wrapper">
-            <Slideshow
-            pictures={data.pictures} alt={"Paysage montagneux"}
-            />
+                <Slideshow
+                    pictures={data.pictures}
+                    alt={"Paysage montagneux"}
+                />
                 <section>
                     <div className="details">
                         <div className="details__info">
-                            <h1 className="details__info__title">{data.title}</h1>
-                            <h2 className="details__info__location">{data.location}</h2>
+                            <h1 className="details__info__title">
+                                {data.title}
+                            </h1>
+                            <h2 className="details__info__location">
+                                {data.location}
+                            </h2>
                             <ul className="details__info__tag">
                                 {data.tags.map((tags, index) => (
-                                <li className="details__info__tag__content" key={`${index}-${tags}`}>{tags}</li>
-                                ) )}
-                                
+                                    <li
+                                        className="details__info__tag__content"
+                                        key={`${index}-${tags}`}
+                                    >
+                                        {tags}
+                                    </li>
+                                ))}
                             </ul>
                         </div>
                         <div className="details__more">
                             <div className="details__more__owner">
-                                <p className="details__more__owner__name">{data.host.name}</p>
+                                <p className="details__more__owner__name">
+                                    {data.host.name}
+                                </p>
                                 <img
                                     src={data.host.picture}
                                     alt="proprietaire de l'appartement"
                                     className="details__more__owner__picture"
                                 />
                             </div>
-                            <div className="details__more__info__rating">
-                                <Stars rate={data.rating}  key ={lodgings.id}/>
+                            <div className="details__more__info">
+                                {rate.map((rateLodging) =>
+                                    data.rating >= rateLodging ? (
+                                        <div key={data.host}>
+                                            <img
+                                                src={StarFull}
+                                                alt=""
+                                                className="details__more__info__ratingFull"
+                                            />
+                                        </div>
+                                    ) : (
+                                        <div key={data.host}>
+                                            <img
+                                                src={StarEmpty}
+                                                alt=""
+                                                className="details__more__info__ratingEmpty"
+                                            />
+                                        </div>
+                                    )
+                                )}
                             </div>
                         </div>
                     </div>

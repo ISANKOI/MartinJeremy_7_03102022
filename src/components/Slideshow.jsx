@@ -17,14 +17,14 @@ function Slideshow(img) {
             <div onClick={previous} className="slideshow__arrowLeft">
                 <img src={ArrowLeft} alt="" />
             </div>
-            <div on click={next} className="slideshow__arrowRight">
+            <div onClick={next} className="slideshow__arrowRight">
                 <img src={ArrowRight} alt="" />
             </div>
             <p className="slideshow__counter">1/5</p>
-            {img.pictures.map((image, index) => {
+            {img.pictures.map((picture, index) => {
                 return (
                     <div key={index}>
-                        {index === selected && (<img src={image} alt="" className="slideshow__img" />)}
+                        {index === selected && (<img src={picture} alt="" className="slideshow__img" />)}
                     </div>
                 )
             })}
