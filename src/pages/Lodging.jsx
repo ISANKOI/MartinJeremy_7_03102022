@@ -15,7 +15,7 @@ function Lodging() {
             <div className="wrapper">
                 <Slideshow
                     pictures={data.pictures}
-                    alt={"Paysage montagneux"}
+                    alt={"Photo d'interieur des habitations"}
                 />
                 <section>
                     <div className="details">
@@ -49,10 +49,10 @@ function Lodging() {
                                 />
                             </div>
                             <div className="details__more__info">
-                                {rate.map((rateLodging) =>
+                                {rate.map((rateLodging, i) =>
                                     data.rating >= rateLodging ? (
                                         <div
-                                            key={data.host}
+                                            key={"start-"+i}
                                             className="details__more__info__rating"
                                         >
                                             <img
@@ -63,7 +63,7 @@ function Lodging() {
                                         </div>
                                     ) : (
                                         <div
-                                            key={data.host}
+                                            key={"start-"+i}
                                             className="details__more__info__rating"
                                         >
                                             <img
