@@ -15,7 +15,7 @@ function Lodging() {
             <div className="wrapper">
                 <Slideshow
                     pictures={data.pictures}
-                    alt={"Photo d'interieur des habitations"}
+                    alt="Photo d'interieur des habitations"
                 />
                 <section>
                     <div className="details">
@@ -87,7 +87,7 @@ function Lodging() {
                         <div className="details__collapse__equipment">
                             <Collapse
                                 title="Equipements"
-                                description={data.equipments}
+                                description= {data.equipments}
                             />
                         </div>
                     </div>

@@ -7,16 +7,16 @@ function Collapse({title, description}) {
     const [display, setDisplay] = useState(false)
 
     return display ? (
-        <div className="a-propos">
-        <ul className="a-propos__list">
+        <div className="collapse">
+        <ul>
             <li>
-                <div onClick={() => setDisplay(false)} className="a-propos__list__valeur">
-                    <h3 className="valeur__title">{title}</h3>
-                    <div className="a-propos__list__valeur__arrow">
-                        <img src={Arrow} alt="Flèche" className="arrow_open"/>
+                <div onClick={() => setDisplay(false)} className="collapse__list">
+                    <h3>{title}</h3>
+                    <div className="arrow">
+                        <img src={Arrow} alt="Flèche" className="arrow__open"/>
                     </div>
                 </div>
-                <div className="a-propos__list__valeur__text">
+                <div className="collapse__text">
                     <p>{description}</p>
                 </div>
             </li>
@@ -25,13 +25,13 @@ function Collapse({title, description}) {
 
     ) : (
 
-        <div className="a-propos">
-        <ul className="a-propos__list">
+        <div className="collapse">
+        <ul>
             <li>
-                <div onClick={() => setDisplay(true)} className="a-propos__list__valeur">
-                    <h3 className="valeur__title">{title}</h3>
-                    <div className="a-propos__list__valeur__arrow">
-                        <img src={Arrow} alt="Flèche" className="arrow_close"/>
+                <div onClick={() => setDisplay(true)} className="collapse__list">
+                    <h3>{title}</h3>
+                    <div className="arrow">
+                        <img src={Arrow} alt="Flèche" className="arrow__close"/>
                     </div>
                 </div>
             </li>

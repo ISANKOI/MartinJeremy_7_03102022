@@ -4,49 +4,43 @@ header {
     align-items: center;
     width: 100%;
     padding: 24px 0px;
-    & .header__logo {
+    .header__logo {
         margin: 22px 0;
     }
 
-    .header__nav {
-        &__list {
+    nav {
+        ul {
             display: flex;
-            &__li {
-                &__link {
-                    text-decoration: none;
-                    margin-left: 35px;
-                    font-size: 24px;
-                    &.active {
-                        text-decoration: underline;
-                    }
-                }
 
+            .nav__link {
+                text-decoration: none;
+                margin-left: 35px;
+                font-size: 24px;
+                &.active {
+                    text-decoration: underline;
+                }
             }
         }
     }
 }
 
-
 @media (max-width: $breakpoints-phone-desktop) {
     header {
-        width: 100%;
         padding: 12px 0;
-
-        & .header__logo {
+        .header__logo {
             margin: 0;
-        }
-        .header__logo__img {
-            height: 47px;
-            width: 145px;
+            img {
+                height: 47px;
+                width: 145px;
+            }
         }
 
-        .header__nav {
-            &__list {
-                &__li {
-                    &__link {
-                        font-size: 14px;
-                        margin-left: 14px;
-                    }
+        nav {
+            ul {
+                .nav__link {
+                    text-decoration: none;
+                    margin-left: 14px;
+                    font-size: 14px;
                 }
             }
         }
