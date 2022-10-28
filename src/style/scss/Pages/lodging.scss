@@ -1,7 +1,7 @@
 .details {
     display: flex;
     justify-content: space-between;
-    padding-top: 20px;
+    margin: 20px 0;
     &__info {
         display: flex;
         flex-direction: column;
@@ -10,12 +10,13 @@
             font-size: 36px;
             font-weight: 500;
             color: $color-primary;
-            padding-bottom: 5px;
+
         }
         &__location {
             font-size: 18px;
             font-weight: 500;
             color: $color-primary;
+            padding: 10px 0;
         }
         &__tag {
             display: flex;
@@ -64,12 +65,11 @@
         &__info {
             display: flex;
             gap: 3px;
-            margin-bottom: 14px;
             &__rating {
-                &__star {
-
-                }
+                display: flex;
             }
+
+            
         }
     }
     &__collapse {
@@ -91,16 +91,14 @@
     .details {
         display: flex;
         flex-direction: column;
+        margin: 10px 0;
         &__info {
+            padding-bottom: 10px;
             &__title {
                 font-size: 18px;
             }
             &__location {
                 font-size: 14px;
-            }
-            &__tag {
-                &__content {
-                }
             }
         }
         &__more {
@@ -125,5 +123,16 @@
                 }
             }
         }
+        &__collapse {
+            display: flex;
+            flex-direction: column;
+            &__description {
+                width: 100%;
+            }
+            &__equipment {
+                width: 100%;
+            }
+        }
+
     }
 }

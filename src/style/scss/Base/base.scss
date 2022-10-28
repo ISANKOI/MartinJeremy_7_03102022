@@ -5,7 +5,7 @@ body{
 
     @include phone-desktop-only;
 }
-main {  min-height: calc( 100vh - 22em);
+main {  min-height: calc( 100vh - 16em);
         margin: auto;
         width: 100%;
 }
@@ -17,9 +17,9 @@ main {  min-height: calc( 100vh - 22em);
 
 ul{ list-style-type:none;
     padding: 0px;
-    margin: 14px 0;
+    margin: 0px;
 }
-h1, h2, h3, h4, h5 { margin: 0px;}
+h1, h2, h3, h4, h5, p { margin: 0px;}
 
 a{  
     color: $color-primary;
