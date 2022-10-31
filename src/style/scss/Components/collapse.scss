@@ -1,19 +1,15 @@
 .collapse {
     display: flex;
-    justify-content: center;
-    ul {
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        .collapse__list {
+    flex-direction: column;
+        .collapse__title {
             display: flex;
             justify-content: space-between;
             align-items: center;
             background-color: $color-primary;
             height: 47px;
-
             border-radius: 5px;
             color: $color-white;
+            z-index: 2;
             &:hover {
                 cursor: pointer;
             }
@@ -42,7 +38,8 @@
         .collapse__text {
             background-color: $background-secondary;
             border-radius: 0 0 5px 5px;
-            padding: 20px 12px;
+            padding: 22px 12px;
+            margin-top: -4px;
             ul {
                 li {
                     color: $color-primary;
@@ -61,13 +58,12 @@
                 margin: 0px;
             }
         }
-    }
+
 }
 
 @media (max-width: $breakpoints-phone-desktop) {
     .collapse {
-        ul {
-            .collapse__list {
+            .collapse__title {
                 height: 30px;
                 h3 {
                     font-size: 13px;
@@ -86,7 +82,7 @@
                 }
             }
             .collapse__text {
-                padding: 10px 6px;
+                padding: 12px 6px;
                 ul {
                     li {
                         font-size: 12px;
@@ -98,6 +94,5 @@
                     line-height: 18px;
                 }
             }
-        }
     }
 }
