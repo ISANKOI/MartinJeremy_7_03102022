@@ -1,13 +1,16 @@
-html { scroll-behavior: smooth; }
-body{ 
-    font-family: 'Montserrat', sans-serif;
+html {
+    scroll-behavior: smooth;
+}
+body {
+    font-family: "Montserrat", sans-serif;
     margin: 0px;
 
     @include phone-desktop-only;
 }
-main {  min-height: calc( 100vh - 16em);
-        margin: auto;
-        width: 100%;
+main {
+    min-height: calc(100vh - 16em);
+    margin: auto;
+    width: 100%;
 }
 .wrapper {
     max-width: 1240px;
@@ -15,12 +18,15 @@ main {  min-height: calc( 100vh - 16em);
     padding: 0 10px;
 }
 
-ul{ list-style-type:none;
+ul {
+    list-style-type: none;
     padding: 0px;
     margin: 0px;
 }
-h1, h2, h3, h4, h5, p { margin: 0px;}
+h1, h2, h3, h4, h5, p {
+    margin: 0px;
+}
 
-a{  
+a {
     color: $color-primary;
 }

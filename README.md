@@ -1,13 +1,13 @@
-<h1>Projet N°7: KASA <h1>
+<h1>KASA <h1>
 
 <h2>Objectif :</h2>
 
-1. Développer
+1. Développer:
 
     - Les routes React Router
     - Les composants React
     - Les différentes pages de l'application
-    - Les media queries
+    - Les medias queries
     
 - Et ce avec un code de qualité !
 
@@ -15,7 +15,7 @@
 
 1. Cloner <a href='https://github.com/ISANKOI/MartinJeremy_7_03102022'>l'application</a>.
 
-2. Vérifiez que vous etes bien à la racine du projet
+2. Vérifiez que vous etes bien à la racine de l'application
     - Installer les dépendances : npm install
     - Lancer : npm start
 

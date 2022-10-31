@@ -1,4 +1,4 @@
-.collapse__container{
+.collapse__container {
     display: flex;
     flex-direction: column;
     gap: 32px;
@@ -6,8 +6,8 @@
 }
 
 @media (max-width: $breakpoints-phone-desktop) {
-    .collapse__container{
-       gap: 16px;
-       padding: 16px 0;
+    .collapse__container {
+        gap: 16px;
+        padding: 16px 0;
     }
 }

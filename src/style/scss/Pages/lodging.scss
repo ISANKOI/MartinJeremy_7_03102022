@@ -10,7 +10,6 @@
             font-size: 36px;
             font-weight: 500;
             color: $color-primary;
-
         }
         &__location {
             font-size: 18px;
@@ -55,7 +54,6 @@
                 width: 90px;
                 margin-right: 6px;
                 text-align: right;
-                
             }
             &__picture {
                 width: 64px;
@@ -69,8 +67,6 @@
             &__rating {
                 display: flex;
             }
-
-            
         }
     }
     &__collapse {
@@ -137,6 +133,5 @@
                 width: 100%;
             }
         }
-
     }
 }
