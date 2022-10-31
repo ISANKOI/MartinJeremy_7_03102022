@@ -1,7 +1,9 @@
+//importations
 import Banner from "../components/Banner";
 import Collapse from "../components/Collapse";
 import BannerAbout from "../assets/BannerAbout.jpg"
 
+//Page A-propos
 function About() {
     return (      
       <main>

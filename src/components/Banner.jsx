@@ -1,3 +1,4 @@
+// Composant Banière
 function Banner({src, alt, slogan}) {
     return (
         <div className="banner">

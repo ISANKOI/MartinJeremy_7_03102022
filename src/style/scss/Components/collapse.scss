@@ -1,7 +1,6 @@
 .collapse {
     display: flex;
     justify-content: center;
-    padding: 16px 0;
     ul {
         display: flex;
         flex-direction: column;
@@ -67,7 +66,6 @@
 
 @media (max-width: $breakpoints-phone-desktop) {
     .collapse {
-        padding: 8px 0;
         ul {
             .collapse__list {
                 height: 30px;

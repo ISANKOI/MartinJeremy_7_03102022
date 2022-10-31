@@ -1,3 +1,4 @@
+//Importations
 import Slideshow from "../components/Slideshow";
 import Collapse from "../components/Collapse";
 import StarFull from "../assets/StarFull.png";
@@ -5,6 +6,8 @@ import StarEmpty from "../assets/StarEmpty.png";
 import lodgings from "../data/lodgings.json";
 import { Navigate, useParams } from "react-router-dom";
 
+
+//Page Hébergement (details)
 function Lodging() {
     const { id } = useParams();
     const data = lodgings.find((location) => location.id === id);
@@ -57,7 +60,7 @@ function Lodging() {
                                         >
                                             <img
                                                 src={StarFull}
-                                                alt=""
+                                                alt="Etoile de notation pleine"
                                                 className="details__more__info__rating__star"
                                             />
                                         </div>
@@ -68,7 +71,7 @@ function Lodging() {
                                         >
                                             <img
                                                 src={StarEmpty}
-                                                alt=""
+                                                alt="Etoile de notation vide"
                                                 className="details__more__info__rating__star"
                                             />
                                         </div>

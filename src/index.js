@@ -1,5 +1,6 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
+//Importations
+import React from 'react'
+import ReactDOM from 'react-dom/client'
 import { BrowserRouter as Router, Route, Routes} from 'react-router-dom'
 import '../src/style/scss/style.scss'
 import Home from './pages/Home'
@@ -9,9 +10,7 @@ import Error from './pages/Error'
 import Header from './components/Header'
 import Footer from './components/Footer'
 
-
-
-
+//Route vers les différentes pages du site
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
@@ -29,7 +28,5 @@ root.render(
   </React.StrictMode>
 );
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
+
 

@@ -1,7 +1,9 @@
+//Importations
 import React from "react";
 import { Link } from "react-router-dom";
 import lodgings from "../data/lodgings.json";
 
+//Composant Card
 function Card() {
     return (
         <div className="card">

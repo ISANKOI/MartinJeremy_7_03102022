@@ -1,5 +1,7 @@
+//Importation
 import { Link } from "react-router-dom";
 
+//Page Erreur 404
 function Error() {
     return (
           <main className="error__container">

@@ -1,6 +1,8 @@
+//Importations
 import { useState } from "react";
 import Arrow from "../assets/Arrow.png";
 
+//Composant Collapse
 function Collapse({ title, description }) {
     const [display, setDisplay] = useState(false);
 

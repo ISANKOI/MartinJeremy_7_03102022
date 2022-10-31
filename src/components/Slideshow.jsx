@@ -1,8 +1,10 @@
+//Importations
 import { useState } from "react";
 import ArrowLeft from "../assets/ArrowLeft.png";
 import ArrowRight from "../assets/ArrowRight.png";
 
-function Slideshow(slide,) {
+//Composant Slideshow
+function Slideshow(slide) {
     const [selected, setSelected] = useState(0)
     const pictures = slide.pictures;
     

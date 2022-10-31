@@ -1,7 +1,9 @@
+//Importations
 import Banner from "../components/Banner";
 import Card from '../components/Card';
 import BannerHome from "../assets/BannerHome.jpg"
 
+//Page d'Accueil
 function Home() {
     return (
         <main>
