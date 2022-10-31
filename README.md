@@ -1,5 +1,5 @@
 <h1>KASA <h1>
-
+Avec plus de 500 annonces postées chaque jour, Kasa fait partie des leaders de la location d’appartements entre particuliers en France.
 <h2>Objectif :</h2>
 
 1. Développer:
