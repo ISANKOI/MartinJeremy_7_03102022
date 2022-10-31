@@ -13,6 +13,7 @@
         position: absolute;
         top: 40%;
         right: 1%;
+        
         :hover {
             cursor: pointer;
         }
@@ -31,6 +32,7 @@
         border-radius: 25px;
         object-fit: cover;
         object-position: center;
+        
     }
 }
 @media (max-width: $breakpoints-phone-desktop) {
