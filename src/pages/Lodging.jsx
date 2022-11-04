@@ -6,8 +6,7 @@ import StarEmpty from "../assets/StarEmpty.png";
 import lodgings from "../data/lodgings.json";
 import { Navigate, useParams } from "react-router-dom";
 
-
-//Page Hébergement (details)
+//Page Hébergement
 function Lodging() {
     const { id } = useParams();
     const data = lodgings.find((location) => location.id === id);
@@ -16,7 +15,7 @@ function Lodging() {
     return data ? (
         <main>
             <div className="wrapper">
-                <Slideshow
+                <Slideshow      //Importation du composant Slideshow
                     pictures={data.pictures}
                     alt="Photo d'interieur des habitations"
                 />
@@ -42,37 +41,32 @@ function Lodging() {
                         </div>
                         <div className="details__more">
                             <div className="details__more__owner">
-                                <p className="details__more__owner__name">
-                                    {data.host.name}
-                                </p>
+                                <p>{data.host.name}</p>
                                 <img
                                     src={data.host.picture}
                                     alt="proprietaire de l'appartement"
-                                    className="details__more__owner__picture"
                                 />
                             </div>
                             <div className="details__more__info">
                                 {rate.map((rateLodging, i) =>
                                     data.rating >= rateLodging ? (
                                         <div
-                                            key={"start-"+i}
+                                            key={"start-" + i}
                                             className="details__more__info__rating"
                                         >
                                             <img
                                                 src={StarFull}
                                                 alt="Etoile de notation pleine"
-                                                className="details__more__info__rating__star"
                                             />
                                         </div>
                                     ) : (
                                         <div
-                                            key={"start-"+i}
+                                            key={"start-" + i}
                                             className="details__more__info__rating"
                                         >
                                             <img
                                                 src={StarEmpty}
                                                 alt="Etoile de notation vide"
-                                                className="details__more__info__rating__star"
                                             />
                                         </div>
                                     )
@@ -82,15 +76,15 @@ function Lodging() {
                     </div>
                     <div className="details__collapse">
                         <div className="details__collapse__description">
-                            <Collapse
+                            <Collapse //Importation du composant Collapse
                                 title="Description"
                                 description={data.description}
                             />
                         </div>
                         <div className="details__collapse__equipment">
-                            <Collapse
+                            <Collapse //Importation du composant Collapse
                                 title="Equipements"
-                                description= {data.equipments}
+                                description={data.equipments}
                             />
                         </div>
                     </div>
@@ -98,7 +92,7 @@ function Lodging() {
             </div>
         </main>
     ) : (
-        <Navigate replace to="/404" />
+        <Navigate replace to="/404" /> //Si les data sont introuvable redirection vers la page 404
     );
 }
 

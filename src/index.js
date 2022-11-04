@@ -7,8 +7,8 @@ import Home from './pages/Home'
 import Lodging from './pages/Lodging'
 import About from './pages/About'
 import Error from './pages/Error'
-import Header from './components/Header'
-import Footer from './components/Footer'
+import Header from './layout/Header'
+import Footer from './layout/Footer'
 
 //Route vers les différentes pages du site
 const root = ReactDOM.createRoot(document.getElementById('root'));
