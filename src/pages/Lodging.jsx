@@ -76,13 +76,13 @@ function Lodging() {
                     </div>
                     <div className="details__collapse">
                         <div className="details__collapse__description">
-                            <Collapse //Importation du composant Collapse
+                            <Collapse       //Importation du composant Collapse
                                 title="Description"
                                 description={data.description}
                             />
                         </div>
                         <div className="details__collapse__equipment">
-                            <Collapse //Importation du composant Collapse
+                            <Collapse       //Importation du composant Collapse
                                 title="Equipements"
                                 description={data.equipments}
                             />
@@ -92,7 +92,7 @@ function Lodging() {
             </div>
         </main>
     ) : (
-        <Navigate replace to="/404" /> //Si les data sont introuvable redirection vers la page 404
+        <Navigate replace to="/404" />      //Si les datas sont introuvables, redirection vers la page 404 (page d'erreur)
     );
 }
 

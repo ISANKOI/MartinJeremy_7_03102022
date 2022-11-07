@@ -10,14 +10,14 @@ function Slideshow(slide) {
     
 
     const previous = function() {       //fonction précédent pour fleche gauche du Slideshow
-        if(selected == 0 ) {
+        if(selected === 0 ) {
             setSelected(pictures.length - 1)
         }
 
         selected > 0 && setSelected(selected - 1)
     }
     const next = function() {           //fonction suivant pour fleche droite du Slideshow
-        if(selected == pictures.length - 1){
+        if(selected === pictures.length - 1){
             setSelected(0)
         }
        selected < pictures.length - 1 && setSelected(selected + 1)
