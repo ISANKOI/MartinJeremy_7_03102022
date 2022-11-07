@@ -11,7 +11,7 @@ function Card() {
                     <Link to={`lodging/${lodgings.id}`} key={lodgings.id}>
                         <div className="card__item__background"></div>
                         <img
-                            src={`${lodgings.cover}`}
+                            src={lodgings.cover}
                             alt={lodgings.title}
                         />
                         <h3>{lodgings.title}</h3>
