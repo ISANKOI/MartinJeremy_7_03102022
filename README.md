@@ -1,5 +1,6 @@
-<h1>KASA <h1>
-<h2>Objectif :</h2>
+# KASA #
+    
+## Objectif : ##
 
 1. Développer:
 
@@ -10,7 +11,7 @@
     
 - Et ce avec un code de qualité !
 
-<h2>Test de l'application :</h2>
+## Test de l'application : ##
 
 1. Cloner <a href='https://github.com/ISANKOI/MartinJeremy_7_03102022'>l'application</a>.
 
