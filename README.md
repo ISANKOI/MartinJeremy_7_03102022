@@ -11,8 +11,6 @@ Avec plus de 500 annonces postées chaque jour, Kasa fait partie des leaders de 
     - Les différentes pages de l'application
     - Les medias queries
     
-- Et ce avec un code de qualité !
-
 ## Test de l'application : ##
 
 1. Cloner <a href='https://github.com/ISANKOI/MartinJeremy_7_03102022'>l'application</a>.
